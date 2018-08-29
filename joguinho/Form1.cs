@@ -12,7 +12,7 @@ namespace joguinho
 {
     public partial class Form1 : Form
     {
-        //uma string para criar uma lista de palavra 
+        //uma string para criar uma lista de palavra
         string[] palavras = new string[6]
         {
             "Abacaxi",
@@ -45,10 +45,10 @@ namespace joguinho
 
         private void ChancesDeVida()
         {
-            //aqui vou atualizar toda vez 
+            //aqui vou atualizar toda vez
             // em que o jogador errar, ele perde uma vida
-            // mudando a cor 
-            lbChances.Text = "Chances: " + chances; 
+            // mudando a cor
+            lbChances.Text = "Chances: " + chances;
 
             if (chances >= 6)
             {
@@ -106,7 +106,7 @@ namespace joguinho
                 tbLetra.Clear();
                 tbLetra.Focus();
                 lbStatus.Text = " ";
-                lbLetrasUtilizadas.Text += letra + "; ";
+                lbLetrasUtilizadas.Text += letras + "; ";
 
                 //status, verificando se tem a letra na pálavra
                 if (palavra.Contains(letras))
@@ -133,9 +133,9 @@ namespace joguinho
             //se não tem nenhuma letra
             else
             {
-                lbStatus.Text = "Digite UMA letra!";      
+                lbStatus.Text = "Digite UMA letra!";
             }
-            
+
         }
 
         private void AtualizarPalavra()
@@ -148,7 +148,7 @@ namespace joguinho
             {
                 if (letra.Contains(letrinhas))
                 {
-                    exibirpalavra += letrinhas + " "; 
+                    exibirpalavra += letrinhas + " ";
                 }
 
                 else
@@ -156,24 +156,24 @@ namespace joguinho
                     exibirpalavra += "_ ";
                     venceu = false;
                 }
+			}
 
-                lbPalavra.Text = exibirpalavra;
+			lbPalavra.Text = exibirpalavra;
 
-                if (venceu)
-                {
-                    tbLetra.Enabled = false;
-                    btJogar.Enabled = false;
+			if (venceu)
+			{
+				tbLetra.Enabled = false;
+				btJogar.Enabled = false;
 
-                    MessageBox.Show("você Ganhou");
-                }
-            }
-        }
+				MessageBox.Show("você Ganhou");
+			}
+		}
 
         private void btJogar_KeyDown(object sender, KeyEventArgs e)
         {
             //fui no raio, dois click "KeyDown"
 
-            // se eu apertar a tecla ENTER 
+            // se eu apertar a tecla ENTER
             //ele realiza uma ação no botão jogar
             if (e.KeyCode == Keys.Enter)
             {
