@@ -1,0 +1,10 @@
+D:\joguinho\joguinho\bin\Debug\joguinho.exe.config
+D:\joguinho\joguinho\bin\Debug\joguinho.exe
+D:\joguinho\joguinho\bin\Debug\joguinho.pdb
+D:\joguinho\joguinho\obj\Debug\joguinho.csprojAssemblyReference.cache
+D:\joguinho\joguinho\obj\Debug\joguinho.Form1.resources
+D:\joguinho\joguinho\obj\Debug\joguinho.Properties.Resources.resources
+D:\joguinho\joguinho\obj\Debug\joguinho.csproj.GenerateResource.cache
+D:\joguinho\joguinho\obj\Debug\joguinho.csproj.CoreCompileInputs.cache
+D:\joguinho\joguinho\obj\Debug\joguinho.exe
+D:\joguinho\joguinho\obj\Debug\joguinho.pdb
